@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SETUGOV — Home</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { 950: '#0a1730', 900: '#0d1e3d', 800: '#132a52', 700: '#1a3766' },
+        },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  .stepper-dot { width:.5rem; height:.5rem; border-radius:9999px; }
+</style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+  <!-- Utility bar -->
+  <div class="bg-white border-b border-slate-200 text-[11px] text-slate-500">
+    <div class="max-w-[1280px] mx-auto px-6 py-1.5 flex items-center justify-between">
+      <span>भारत सरकार | Government of India</span>
+      <div class="flex items-center gap-4">
+        <span>English | हिंदी</span>
+        <span>High Contrast</span>
+        <span>Screen Reader</span>
+        <span>Accessibility</span>
+        <span>Helpdesk: 1800-SETU-GOV</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-[1280px] mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-md bg-navy-900 flex items-center justify-center text-white text-xs font-bold">SG</div>
+        <div>
+          <div class="flex items-baseline gap-2">
+            <span class="font-bold text-lg text-navy-900 tracking-tight">SETUGOV</span>
+            <span class="text-xs font-medium text-slate-400">v2.4</span>
+          </div>
+          <p class="text-[11px] text-slate-400 leading-none">One Citizen · One Consent · Many Government Services</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="flex items-center gap-2 text-sm font-medium border border-slate-300 rounded-md px-3 py-1.5 hover:bg-slate-50">
+          <span>🏛</span> Department Portal
+        </button>
+        <div class="flex items-center gap-2">
+          <img src="https://i.pravatar.cc/40?img=47" class="w-9 h-9 rounded-full object-cover" alt="Aarav Sharma" />
+          <div class="text-sm leading-tight">
+            <div class="font-semibold text-slate-800">Aarav Sharma</div>
+            <div class="text-[11px] text-emerald-600 font-medium">✓ Identity Verified · Aadhaar L2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav class="bg-navy-900 text-slate-300">
+    <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between text-sm">
+      <div class="flex items-center">
+        <a href="index.html" class="px-4 py-3 text-white font-semibold border-b-2 border-white">Home</a>
+        <a href="#" class="px-4 py-3 hover:text-white">Services</a>
+        <a href="#" class="px-4 py-3 hover:text-white">My Applications</a>
+        <a href="consents.html" class="px-4 py-3 hover:text-white">My Consents</a>
+        <a href="#" class="px-4 py-3 hover:text-white">Notifications <span class="text-rose-400">(2)</span></a>
+        <a href="interoperability.html" class="px-4 py-3 hover:text-white">Interoperability Monitor</a>
+      </div>
+      <div class="flex items-center gap-1.5 text-emerald-400 text-xs pr-1">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> NIF Gateway API: Operational
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-[1280px] mx-auto px-6 py-6">
+
+    <!-- Welcome -->
+    <section class="mb-6">
+      <h1 class="text-2xl font-bold text-navy-900">Welcome back, Aarav Sharma</h1>
+      <div class="flex flex-wrap items-center gap-3 mt-3">
+        <span class="text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-full px-3 py-1">Identity Verified · Level 2 Aadhaar e-Pramaan linked</span>
+        <button class="bg-navy-900 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-navy-800">⊕ Apply for Government Services</button>
+        <button class="border border-slate-300 text-sm font-semibold px-4 py-2 rounded-md hover:bg-slate-50">▤ View Consent Registry</button>
+        <button class="border border-slate-300 text-sm font-semibold px-4 py-2 rounded-md hover:bg-slate-50">⭳ Download Master Dossier</button>
+      </div>
+      <div class="flex flex-wrap items-center gap-8 mt-4 text-sm">
+        <div><span class="text-slate-500">Citizen ID: </span><span class="font-mono bg-slate-100 px-2 py-0.5 rounded">SETU-ID: 9842-1849-7712</span></div>
+        <div class="text-slate-400 text-xs">Last authenticated: Today, 10:14 AM IST <br/> (Secure IPv6 AES-256 session)</div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="grid grid-cols-4 gap-4 mb-6">
+      <div class="bg-white rounded-lg border border-slate-200 p-4">
+        <div class="flex items-center justify-between text-slate-500 text-sm mb-2"><span>Active Applications</span><span class="bg-slate-100 rounded p-1.5">📋</span></div>
+        <div class="text-3xl font-extrabold text-navy-900">03</div>
+        <div class="text-xs text-amber-600 mt-1">⚠ 1 Action Required</div>
+      </div>
+      <div class="bg-white rounded-lg border border-slate-200 p-4">
+        <div class="flex items-center justify-between text-slate-500 text-sm mb-2"><span>Approved Services</span><span class="bg-emerald-50 rounded p-1.5">✓</span></div>
+        <div class="text-3xl font-extrabold text-navy-900">05</div>
+        <div class="text-xs text-emerald-600 mt-1">✓ Active &amp; Benefits Disbursed</div>
+      </div>
+      <div class="bg-white rounded-lg border border-slate-200 p-4">
+        <div class="flex items-center justify-between text-slate-500 text-sm mb-2"><span>Pending Actions</span><span class="bg-rose-50 rounded p-1.5">🕒</span></div>
+        <div class="text-3xl font-extrabold text-rose-600">01</div>
+        <div class="text-xs text-rose-600 mt-1">⏱ Due in 48h: Income Verification</div>
+      </div>
+      <div class="bg-white rounded-lg border border-slate-200 p-4">
+        <div class="flex items-center justify-between text-slate-500 text-sm mb-2"><span>Active Consents</span><span class="bg-slate-100 rounded p-1.5">🛡</span></div>
+        <div class="text-3xl font-extrabold text-navy-900">04</div>
+        <div class="text-xs text-slate-500 mt-1">DPDP Act protected · auto-expiry</div>
+      </div>
+    </section>
+
+    <!-- Critical alert -->
+    <section class="bg-red-800 text-white rounded-t-md">
+      <div class="flex items-center justify-between px-4 py-2 text-xs font-semibold tracking-wide bg-red-900/60 rounded-t-md">
+        <span>⚠ CRITICAL CITIZEN COMPLIANCE ACTION NEEDED</span>
+        <span class="font-mono">SLA Window: 47 hrs remaining</span>
+      </div>
+    </section>
+    <section class="bg-white border border-t-0 border-red-200 rounded-b-md p-5 mb-6">
+      <div class="flex items-start gap-3">
+        <span class="text-red-600 text-xl">⚠</span>
+        <div class="flex-1">
+          <h3 class="font-bold text-slate-800">Action Required: Income Record Verification Needed</h3>
+          <span class="inline-block text-[11px] font-mono bg-slate-100 text-slate-500 rounded px-2 py-0.5 my-1.5">#SETU-EDU-2026-000184</span>
+          <p class="text-sm text-slate-600 mt-1 max-w-2xl">Post-Matric Merit-cum-Means Technical Scholarship: The State Revenue Department certificate record is ready for instant 1-click retrieval via the SETUGOV consent handshake. Your physical presence or paper upload is not required.</p>
+          <p class="text-xs text-slate-400 mt-2">⏳ Grant approval will pause if unverified past 28 Feb 2026, 23:59 IST.</p>
+        </div>
+        <div class="flex flex-col gap-2 shrink-0">
+          <button class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-md whitespace-nowrap">🛡 Authorize Consent &amp; Verify</button>
+          <button class="border border-slate-300 text-sm font-semibold px-4 py-2 rounded-md whitespace-nowrap hover:bg-slate-50">📄 Review Application Docket</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid grid-cols-3 gap-6">
+      <!-- Main column -->
+      <div class="col-span-2">
+        <div class="flex items-center justify-between mb-1">
+          <h2 class="font-bold text-lg text-navy-900">Active Applications Docket</h2>
+          <button class="text-sm text-slate-500 flex items-center gap-1 hover:text-slate-700">Filter Docket ⚙</button>
+        </div>
+        <p class="text-xs text-slate-400 mb-4">Real-time status synced across Union Ministries and State Data Registries</p>
+
+        <!-- Application card 1 -->
+        <div class="bg-white border border-slate-200 rounded-lg p-5 mb-4">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs text-slate-400 font-mono">SETU-EDU-2026-000184 · Union Ministry of Education &amp; AICTE</span>
+            <span class="text-[11px] font-semibold bg-rose-50 text-rose-600 px-2 py-0.5 rounded">● ACTION REQUIRED</span>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-3">National Merit-cum-Means Technical Scholarship 2025-26</h3>
+          <div class="bg-slate-50 rounded-md p-3 mb-3">
+            <div class="flex justify-between text-xs font-medium text-slate-500 mb-2">
+              <span>Workflow State: Step 3 of 5 (Digital Income Verification)</span>
+              <span>Est. Completion: 48h upon verification</span>
+            </div>
+            <div class="flex gap-1 mb-2">
+              <div class="h-1.5 flex-1 rounded bg-emerald-500"></div>
+              <div class="h-1.5 flex-1 rounded bg-emerald-500"></div>
+              <div class="h-1.5 flex-1 rounded bg-amber-400"></div>
+              <div class="h-1.5 flex-1 rounded bg-slate-200"></div>
+              <div class="h-1.5 flex-1 rounded bg-slate-200"></div>
+            </div>
+            <div class="flex justify-between text-[11px] text-slate-500">
+              <span class="text-emerald-600">✓ Auto-Screen</span>
+              <span class="text-emerald-600">✓ DPDP Consent</span>
+              <span class="text-amber-600 font-semibold">⚠ Revenue API</span>
+              <span>○ Merit Audit</span>
+              <span>○ PFMS Payout</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-slate-400">Submitted: 14 Jan 2026 &nbsp;·&nbsp; Sanction Target: ₹75,000 / Academic Yr &nbsp;·&nbsp; Linked A/C: SBI (DBT Active)</span>
+            <button class="bg-navy-900 text-white text-xs font-semibold px-3 py-2 rounded-md whitespace-nowrap">Complete Verification →</button>
+          </div>
+        </div>
+
+        <!-- Application card 2 -->
+        <div class="bg-white border border-slate-200 rounded-lg p-5 mb-4">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs text-slate-400 font-mono">SETU-HOU-2025-881920 · Ministry of Housing &amp; Urban Affairs</span>
+            <span class="text-[11px] font-semibold bg-amber-50 text-amber-600 px-2 py-0.5 rounded">UNDER DEPARTMENT REVIEW</span>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-3">Pradhan Mantri Awas Yojana (Urban) Housing Interest Subsidy</h3>
+          <p class="text-sm text-slate-600 mb-3">Documentary validation completed via Central Registry of Securitisation Asset Reconstruction and Security Interest (CERSAI). Ground inspection report scheduled with New Delhi Municipal Zone engineer.</p>
+          <div class="grid grid-cols-3 gap-4 bg-slate-50 rounded-md p-3 mb-3 text-sm">
+            <div><div class="text-xs text-slate-400 mb-0.5">Estimated Processing</div><div class="font-semibold">2-3 Business Days</div></div>
+            <div><div class="text-xs text-slate-400 mb-0.5">Assigned Inspector</div><div class="font-semibold">Er. Rajeshwar Tyagi (NDMC)</div></div>
+            <div><div class="text-xs text-slate-400 mb-0.5">Credit Linked Subsidy (CLSS)</div><div class="font-semibold">₹2,67,000 In-Principle</div></div>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-slate-400">Last Status Handshake: Yesterday at 17:42 IST</span>
+            <button class="border border-slate-300 text-xs font-semibold px-3 py-2 rounded-md whitespace-nowrap hover:bg-slate-50">🕓 Track Milestones</button>
+          </div>
+        </div>
+
+        <!-- Application card 3 -->
+        <div class="bg-white border border-slate-200 rounded-lg p-5">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs text-slate-400 font-mono">SETU-REV-2025-694311 · Department of Revenue &amp; Land Records (NCT of Delhi)</span>
+            <span class="text-[11px] font-semibold bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded">✓ APPROVED &amp; DISPATCHED</span>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-3">State Domicile &amp; Caste Certificate Re-validation</h3>
+          <p class="text-sm text-slate-600 mb-3">Re-validation legally executed and signed with Digital Signature Algorithm (DSA). Tamper-evident verifiable credential anchored to India PKI registry with valid SHA-256 cryptographic seal.</p>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-md p-3 flex items-center justify-between">
+            <div class="text-xs text-emerald-800">
+              <div class="font-mono">SHA-256: 8f4b0...39d10e0c</div>
+              <div>e-Signed by Tehsildar (Central Delhi) on 18 Feb</div>
+            </div>
+            <button class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-3 py-2 rounded-md whitespace-nowrap">⭳ Download PDF Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="space-y-4">
+        <div class="bg-white border border-slate-200 rounded-lg p-4">
+          <div class="flex justify-between items-center mb-3">
+            <h4 class="font-bold text-sm text-slate-800">QUICK CIVIC SERVICES</h4>
+            <span class="text-[11px] text-slate-400">Instant Access</span>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between items-center"><div><div class="font-medium">Renew Driving License / DL</div><div class="text-[11px] text-slate-400">Parivahan Sarathi API</div></div><span class="text-slate-300">›</span></li>
+            <li class="flex justify-between items-center"><div><div class="font-medium">Voter Polling Slip (EPIC)</div><div class="text-[11px] text-slate-400">Election Commission of India</div></div><span class="text-slate-300">›</span></li>
+            <li class="flex justify-between items-center"><div><div class="font-medium">Ration Card Family Seeding</div><div class="text-[11px] text-slate-400">One Nation One Ration Card</div></div><span class="text-slate-300">›</span></li>
+            <li class="flex justify-between items-center"><div><div class="font-medium">DigiLocker Cloud Sync</div><div class="text-[11px] text-slate-400">14 Issued Certs in Sync</div></div><span class="text-slate-300">›</span></li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-lg p-4">
+          <div class="flex justify-between items-center mb-3">
+            <h4 class="font-bold text-sm text-slate-800">✉ GOVERNMENT MAILBOX</h4>
+            <span class="text-[11px] bg-rose-500 text-white rounded-full px-2 py-0.5">2 New</span>
+          </div>
+          <div class="border-b border-slate-100 pb-3 mb-3">
+            <div class="text-[11px] text-slate-400">Ministry of Education &nbsp;&nbsp; Today, 08:30 AM</div>
+            <div class="font-semibold text-sm">Preliminary Scholarship Match Letter</div>
+            <p class="text-xs text-slate-500 mt-1">Your credentials meet basic eligibility for the 2025-26 quota. Complete revenue…</p>
+            <a href="#" class="text-xs text-navy-700 font-medium">Open Letter (PDF 210 KB) ↗</a>
+          </div>
+          <div>
+            <div class="text-[11px] text-slate-400">UIDAI Identity Authority &nbsp;&nbsp; 22 Feb 2026</div>
+            <div class="font-semibold text-sm">Aadhaar Biometric Lock Status Notification</div>
+            <p class="text-xs text-slate-500 mt-1">Biometrics remain unlocked for authorized government authentications until 01 Mar…</p>
+            <a href="#" class="text-xs text-navy-700 font-medium">Manage Lock Settings ↗</a>
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-lg p-4">
+          <h4 class="font-bold text-sm text-slate-800 mb-3">▤ ASSIGNED NODAL SUPPORT</h4>
+          <div class="flex items-center gap-2 mb-3">
+            <img src="https://i.pravatar.cc/40?img=12" class="w-9 h-9 rounded-full" alt="" />
+            <div class="text-sm">
+              <div class="font-semibold">Shri M. Sundaram</div>
+              <div class="text-[11px] text-slate-400">District Nodal Officer · Central Secretariat</div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-500 mb-3">Office of the District Magistrate, New Delhi District, 12/1 Jamnagar House, New Delhi</p>
+          <div class="text-xs space-y-1 mb-3">
+            <div class="flex justify-between"><span class="text-slate-400">Toll-Free Helpline</span><span class="font-medium">1800-SETU-GOV</span></div>
+            <div class="flex justify-between"><span class="text-slate-400">Assistance Hours</span><span class="font-medium">09:00-18:00 IST (Mon-Sat)</span></div>
+          </div>
+          <button class="w-full border border-slate-300 text-xs font-semibold py-2 rounded-md hover:bg-slate-50">▭ Book Video Kiosk Consultation</button>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+          <h4 class="font-bold text-sm text-slate-800 mb-2">🛡 Consent &amp; Revocation Shield</h4>
+          <p class="text-xs text-slate-500">Under India's DPDP Act (2023), every data pipeline handshake between SETUGOV and partner ministries is logged in your immutable consent ledger. You may revoke consent permissions at any stage without penalty.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 mt-10">
+    <div class="max-w-[1280px] mx-auto px-6 py-3 flex items-center justify-between text-xs border-b border-white/10">
+      <span>🏛 Powered by India Stack 2.0 &amp; National Interoperability Framework (NIF)</span>
+      <div class="flex gap-4">
+        <span>✓ W3C Verifiable Credentials 2.0</span>
+        <span>🛡 DPDP Act (2023) Compliant</span>
+        <span>♿ Section 508 / GIGW 3.0</span>
+      </div>
+    </div>
+    <div class="max-w-[1280px] mx-auto px-6 py-8 grid grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="text-white font-bold mb-2">SETUGOV</div>
+        <p class="text-xs text-slate-400">The unified civic data handshake and consent-backed sovereign exchange infrastructure connecting Union Ministries, State Departments, and Citizens.</p>
+        <div class="text-[11px] text-emerald-400 mt-3 flex gap-3"><span>● Cluster: DEL-IN-01</span><span>Uptime: 99.992%</span></div>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2 text-xs tracking-wide">LEGAL &amp; ARCHITECTURE</div>
+        <ul class="text-xs space-y-1.5">
+          <li>DPDP Act (2023) Guidelines</li>
+          <li>W3C Verifiable Credentials Protocol</li>
+          <li>Open Consent Architecture Specification</li>
+          <li>National Data Sharing &amp; Accessibility (NDSAP)</li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2 text-xs tracking-wide">ASSURANCE &amp; REDRESSAL</div>
+        <ul class="text-xs space-y-1.5">
+          <li>Security &amp; Audit Transparency</li>
+          <li>CERT-In Compliance Certification</li>
+          <li>Section 508 Accessibility Statement</li>
+          <li>Grievance Officer: Shri M. Sundaram</li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-white font-semibold mb-2 text-xs tracking-wide">INSTITUTIONAL AFFILIATION</div>
+        <p class="text-xs">Ministry of Electronics &amp; Information Technology (MeitY) Electronics Niketan, 6, CGO Complex, Lodhi Road, New Delhi, 110003.</p>
+        <button class="border border-slate-500 text-[11px] rounded px-2 py-1.5 mt-2">🛡 SIH Innovation Cell Initiative</button>
+      </div>
+    </div>
+    <div class="text-center text-[11px] text-slate-500 py-3 border-t border-white/10">© 2026 SETUGOV — Ministry of Electronics &amp; Information Technology (MeitY) &amp; SIH Innovation Cell. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
