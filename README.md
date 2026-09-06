@@ -1,4 +1,3 @@
-# Sarthi
 SIH26129 | A secure interoperability layer that connects existing government platforms - so citizens stop re-entering the same data across portals.
 
 Adding a new department means adding a new adapter — not redesigning the core platform.
